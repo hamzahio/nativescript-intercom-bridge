@@ -72,7 +72,11 @@ export class IntercomBridge {
   static setInAppMessageVisibility(visible: boolean) {
     Intercom.setInAppMessagesVisible(visible);
   }
-
+  
+  static setDeviceToken(token: string){
+    Intercom.setDeviceToken(token);
+  }
+  
   static hideMessenger() {
     Intercom.hideMessenger();
   }
