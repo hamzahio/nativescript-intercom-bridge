@@ -16,6 +16,7 @@ export declare class IntercomBridge {
     static unreadConversationCount(): any;
     static setLauncherVisibility(visible: boolean): void;
     static setInAppMessageVisibility(visible: boolean): void;
+    static setDeviceToken(token: string): void;
     static hideMessenger(): void;
     static enableLogging(): void;
 }
