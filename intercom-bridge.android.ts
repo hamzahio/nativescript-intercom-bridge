@@ -81,7 +81,11 @@ export class IntercomBridge {
   static hideMessenger() {
     io.intercom.android.sdk.Intercom.client().hideMessenger();
   }
-
+  
+  static setDeviceToken(token: string){
+    io.intercom.android.sdk.Intercom.client().setDeviceToken(token);
+  }
+  
   static enableLogging() {
     io.intercom.android.sdk.Intercom.setLogLevel(io.intercom.android.sdk.Intercom.LogLevel.DEBUG);
   }
